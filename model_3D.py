@@ -420,10 +420,10 @@ class model_execute:
         print("PPV ", TP / (TP + FP) * 100)
         print("NPV ", TN / (FN + TN) * 100)
 
-        print("\n\nTP", aa[1, 1], aa[1, 1] * 100. / np.sum(aa))
-        print("TN", aa[1, 0], aa[1, 0] * 100. / np.sum(aa))
-        print("FP", aa[0, 1], aa[0, 1] * 100. / np.sum(aa))
-        print("FN", aa[0, 0], aa[0, 0] * 100. / np.sum(aa))
+#        print("\n\nTP", aa[1, 1], aa[1, 1] * 100. / np.sum(aa))
+#        print("TN", aa[1, 0], aa[1, 0] * 100. / np.sum(aa))
+#        print("FP", aa[0, 1], aa[0, 1] * 100. / np.sum(aa))
+#        print("FN", aa[0, 0], aa[0, 0] * 100. / np.sum(aa))
         # print("ACCURACY", aa[1,1],aa[1,1] / )
 
 def logthis(a):
