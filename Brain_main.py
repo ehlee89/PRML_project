@@ -42,10 +42,12 @@ if CNN_Train_Flag:
     # if not os.path.exists(trainFlag_path):
         # model_execute.mk_3D_voxel_data()
 
-    # cross_entropy, softmax, layers, data_node, lbl_node = model_def.AP_CNN(train=True)
-    # model_execute.train_AP_CNN(cross_entropy=cross_entropy, softmax=softmax, data_node=data_node, label_node=lbl_node)
-
+    # training part
+    cross_entropy, softmax, layers, data_node, lbl_node = model_def.AP_CNN(train=True)
+    model_execute.train_AP_CNN(cross_entropy=cross_entropy, softmax=softmax, data_node=data_node, label_node=lbl_node)
+    
+    #test part
     cross_entropy, softmax, layers, data_node, lbl_node = model_def.AP_CNN(train=False)
     model_execute.test_AP_CNN(softmax=softmax, data_node=data_node)
-
+    
     model_execute.code_test()
